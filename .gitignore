@@ -1,9 +1,64 @@
-# System files
-.DS_Store
-Thumbs.db
-
-# Extra assets
-assets/github_gifs
-assets/github_lossless
+# Extra assets to ignore
+assets/github_gifs/
+assets/github_lossless/
 assets/login_page.jpg
 assets/register_page.jpg
+
+# =========================
+# System / Editor junk
+# =========================
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+
+.idea/
+*.iml
+.vscode/
+
+# =========================
+# Flutter / Dart generated
+# =========================
+.dart_tool/
+.packages
+.pub/
+.pub-cache/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+coverage/
+pubspec.lock
+
+# =========================
+# Android generated
+# =========================
+android/.gradle/
+android/local.properties
+android/**/GeneratedPluginRegistrant.java
+.kotlin
+
+# Built APKs / AABs (optional but good)
+*.apk
+*.aab
+
+# =========================
+# iOS generated
+# =========================
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/Flutter/engine/
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+**/ios/Flutter/.last_build_id
+ios/Podfile.lock
+
+# Xcode
+*.xcuserstate
+*.xcuserdata/
+*.moved-aside
+DerivedData/
+
