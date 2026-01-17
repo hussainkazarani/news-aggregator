@@ -3,6 +3,7 @@ assets/github_gifs/
 assets/github_lossless/
 assets/login_page.jpg
 assets/register_page.jpg
+.env
 
 # =========================
 # System / Editor junk

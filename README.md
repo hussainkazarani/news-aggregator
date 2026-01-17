@@ -33,30 +33,25 @@ The app is built using **Flutter** with state management handled through **Provi
 
 -   **Flutter SDK** (version 3.0 or above)
 -   Android/iOS Emulator or Physical Device
+-   (iOS only) macOS + Xcode + CocoaPods installed
 
 ### Installation
 
 1. **API Key Setup**
 
     - Create an account on [Perigon.io](https://perigon.io) to generate an API key.
-    - Open the `lib/utils/secrets.dart` file and replace the placeholder with your API key:
-        ```dart
-        const String apiKey2 = "YOUR_API_KEY_HERE";
+    - Open the existing `.env` file in the project root.
+    - Add your API key like this:
+        ```env
+        PERIGON_API_KEY=YOUR_API_KEY_HERE
         ```
 
 2. **Clone the Repository**
-
-    - Clone the repository using the following commands:
 
         ```bash
         git clone https://github.com/hussainkazarani/news-aggregator.git
         cd news-aggregator
         ```
-
-    - Alternatively, download the zip file:
-        - Download from [here](https://github.com/hussainkazarani/news-aggregator/archive/refs/heads/main.zip).
-        - Unextract the zip file.
-        - Navigate to `lib/utils/secrets.dart` and enter your API key as described above.
 
 3. **Install Dependencies**
 
@@ -65,6 +60,14 @@ The app is built using **Flutter** with state management handled through **Provi
     ```
 
 4. **Run the App**
+    ### iOS
+    ```bash
+    cd ios
+    pod install
+    cd ..
+    flutter run
+    ```
+    ### Android
     ```bash
     flutter run
     ```
